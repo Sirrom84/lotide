@@ -34,4 +34,3 @@ const without = (sourceArray, itemsToRemove) => {
   return sourceArray.reduce(reducer, []);
 }
   
-  console.log(without([1,2,3,4], [3]));
