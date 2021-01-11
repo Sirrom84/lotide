@@ -15,5 +15,3 @@ const letterPositions = function(word) {
   }
   return obj;
 };
-
-console.log(letterPositions("hello"));
