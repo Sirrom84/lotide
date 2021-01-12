@@ -1,10 +1,6 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`❌ Assertion failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
+
+
 const findKey = function(planetsObj, callback) {
   for (const planet in planetsObj) {
     const starsObj = planetsObj[planet];
@@ -14,6 +10,7 @@ const findKey = function(planetsObj, callback) {
   }
 
 };
+module.exports =findKey;
 // const result = findKey({
 //  "Blue Hill": { stars: 1 },
 //  "Akaleri":   { stars: 3 },

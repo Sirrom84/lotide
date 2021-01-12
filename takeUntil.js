@@ -1,3 +1,5 @@
+const tail = require("./tail");
+
 const takeUntil = function(array, callback) {
   let output = [];
   for (let item of array) {
@@ -8,3 +10,5 @@ const takeUntil = function(array, callback) {
   }
   return output;
 };
+
+module.exports = takeUntil;

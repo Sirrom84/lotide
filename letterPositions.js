@@ -15,3 +15,4 @@ const letterPositions = function(word) {
   }
   return obj;
 };
+ module.exports = letterPositions;

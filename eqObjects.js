@@ -1,4 +1,3 @@
-
 const eqObjects = function(obj1, obj2) {
   if (Object.keys(obj1).length !== Object.keys(obj2).length) {
     return false;
@@ -9,3 +8,5 @@ const eqObjects = function(obj1, obj2) {
     }
   } return true;
 };
+
+module.exports = eqObjects;
